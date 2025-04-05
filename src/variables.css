@@ -10,7 +10,7 @@
   --clr-lightGrayishBlue: hsl(210, 46%, 95%);
 
   /** Typography **/
-  --font-paragraph: 13px; 
+  --font-paragraph: .8125rem; 
 
   --fw-regular: 500;
   --fw-bold: 700;
