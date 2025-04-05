@@ -10,7 +10,7 @@ const Share = () => {
         <p className='share-title'>Share</p>
         <div className="share-icons">
           <img src={facebookIcon} alt="Facebook Icon" />
-          <img src={twitterIcon} alt="Twitter Icon" />
+          <img src={twitterIcon} alt="Twitter Icon" className='twitter-icon' />
 
           <img src={pinterestIcon} alt="Pinterest Icon" />
         </div>

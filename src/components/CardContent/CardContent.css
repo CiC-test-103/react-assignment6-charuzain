@@ -81,3 +81,14 @@
   z-index: 999;
   align-self: flex-end;
 }
+
+.share-button:hover {
+  cursor: pointer;
+}
+
+.btn-gray {
+  background-color: var(--clr-desaturatedDarkBlue);
+}
+.share-icon {
+  filter: brightness(0) invert(1);
+}

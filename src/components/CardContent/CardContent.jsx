@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import drawerImage from '../../../images/drawers.jpg';
 import avatar from '../../../images/avatar-michelle.jpg';
 import shareIcon from '../../../images/icon-share.svg';
-import '../CardContent/CardContent.css'
+import '../CardContent/CardContent.css';
 import Share from '../Share/Share';
 
 export const CardContent = () => {
+  const [display, setDisplay] = useState(false);
+  const shareHandler = () => {
+    setDisplay(!display);
+  };
   return (
     <div className="card">
       <div className="card-image">
@@ -24,17 +28,23 @@ export const CardContent = () => {
         {/* Footer */}
         <div className="card-footer">
           <div className="user-section">
-            <div className="avatar-wrapper">
-            </div>
+            <div className="avatar-wrapper"></div>
             <div className="user-details">
               <h3 className="user-name">Michelle Appleton</h3>
               <p className="date">28 Jun 2020</p>
             </div>
           </div>
-          <div className="share-button">
-            <img src={shareIcon} alt="Share Icon" />
+          <div
+            className={`share-button ${display ? 'btn-gray' : null}`}
+            onClick={shareHandler}
+          >
+            <img
+              src={shareIcon}
+              alt="Share Icon"
+              className={`${display ? 'share-icon' :null}`}
+            />
           </div>
-          <Share/>
+          {display && <Share />}
         </div>
       </div>
     </div>
