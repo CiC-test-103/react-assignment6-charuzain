@@ -12,8 +12,8 @@ export const CardContent = () => {
   };
   return (
     <div className="card">
-      <div className="card-image">
-        <img src={drawerImage} alt="Furniture drawer" />
+      <div className="image-container">
+        <img src={drawerImage} alt="Furniture drawer" className="card-image" />
       </div>
       <div className="card-body">
         <h1 className="card-title">
@@ -41,7 +41,7 @@ export const CardContent = () => {
             <img
               src={shareIcon}
               alt="Share Icon"
-              className={`${display ? 'share-icon' :null}`}
+              className={`${display ? 'share-icon' : null}`}
             />
           </div>
           {display && <Share />}

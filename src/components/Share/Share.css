@@ -35,6 +35,33 @@
   gap: 0.6rem;
   /* align-self: normal; */
 }
-.twitter-icon{
+.twitter-icon {
   align-self: normal;
+}
+
+@media only screen and (min-width: 768px) {
+  .share-container {
+    top: -80px;
+    height: 100%;
+    width: calc(50% + 48px);
+    left: 60%;
+    border-radius: 16px;
+    padding: 1.8rem;
+    /* left: -24px; */
+  }
+  .share-container::after {
+    content: '';
+    width: 30px;
+    height: 15px;
+    background-color: var(--clr-veryDarkGrayishBlue);
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(10%);
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+  }
+  .share-content {
+    margin: 0;
+    width: 100%;
+  }
 }
