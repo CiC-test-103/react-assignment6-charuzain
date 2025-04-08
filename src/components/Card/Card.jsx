@@ -1,14 +1,18 @@
-import React from 'react'
-import { CardContent } from '../CardContent/CardContent'
-import Share from '../Share/Share'
+import { CardContent } from '../CardContent/CardContent';
+import CardImage from '../CardImage/CardImage';
+import CardFooter from '../CardFooter/CardFooter';
+import styles from '../Card/Card.module.css';
 
 const Card = () => {
   return (
-    <>
-      <CardContent />
-      {/* <Share/> */}
-    </>
-  )
-}
+    <div className={styles['card']}>
+      <CardImage />
+      <div className={styles['card-body']}>
+        <CardContent />
+        <CardFooter />
+      </div>
+    </div>
+  );
+};
 
-export default Card
+export default Card;

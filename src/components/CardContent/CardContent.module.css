@@ -1,0 +1,16 @@
+@import '../../variables.css';
+
+.card-title {
+  color: var(--clr-veryDarkGrayishBlue);
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.3px;
+}
+.card-description {
+  color: var(--clr-desaturatedDarkBlue);
+  font-size: var(--font-paragraph);
+  letter-spacing: 0.7px;
+  line-height: 20px;
+  font-weight: var(--fw-regular);
+}
+

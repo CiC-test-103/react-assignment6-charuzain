@@ -1,0 +1,65 @@
+@import '../../variables.css';
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.user-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar-wrapper {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: gray;
+  background-image: url('../../../images/avatar-michelle.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.user-name {
+  color: var(--clr-veryDarkGrayishBlue);
+  font-size: var(--font-paragraph);
+  font-weight: var(--fw-bold);
+}
+
+.date {
+  color: var(--clr-grayishBlue);
+  font-size: var(--font-paragraph);
+}
+
+.share-button {
+  background-color: var(--clr-lightGrayishBlue);
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  align-self: flex-end;
+}
+
+.share-button:hover {
+  cursor: pointer;
+}
+
+.btn-gray {
+  background-color: var(--clr-desaturatedDarkBlue);
+  margin-top: 1rem;
+}
+
+.share-icon {
+  filter: brightness(0) invert(1);
+}
